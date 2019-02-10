@@ -1,0 +1,48 @@
+<html>
+<head>
+	<!--<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">-->
+</head>
+
+<style>
+	p {
+		color:white;
+	}
+	textarea {
+		width: 310px;
+	}
+	button {
+		width: 100px;
+	}
+</style>
+
+<body style="background-color: black; border: 1px solid red">
+	<div style="text-align: center; margin-top: 10px">
+			<p>Kodutöö 02 - krüpto-äpp - Jordan Jorš - 164071</p>
+	</div>
+	<div style="width: 100%; height: 100%; margin-top: 20px;">
+		<div style="width: 50%; height: 340px; text-align: center; margin: auto; border: 1px solid green">
+			<div>
+				<p>Message</p>
+				<textarea id="input"></textarea>
+				
+			</div>
+			<div>
+				<p>Key</p>
+				<textarea id="key"></textarea>
+			</div>
+			<div style="margin-top: 10px">
+				<button onclick="OTP_encrypt()">OTP-encrypt</button>
+				<button onclick="OTP_decrypt()">OTP-decrypt</button>
+				<button onclick="SHA512_encrypt()">SHA-2</button>
+			</div>
+			<div>
+				<p>Result</p>
+			<textarea id="result" style="height: 70px;"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<script src="functions.js"></script>
+	<script src="sha2.js"></script>
+</body>
+</html>
